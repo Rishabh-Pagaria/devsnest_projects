@@ -8,9 +8,11 @@ main{
     width: 50%;
     margin:auto;
     font-family:Georgia, 'Times New Roman', Times, serif;
+    padding:10px;
 }
 h1{
     font-weight:bolder;
+    text-shadow: 5px 5px 11px blue;
 }
 .letter,h1{
     margin: 10px;
@@ -19,7 +21,14 @@ h1{
 }
 .sender,.receiver,.salutation{
     background-color:cadetblue;
+    border-radius: 0 15px;
+    box-shadow: 2px 5px black;
 }
 .body_l,.date{
     background-color:chocolate;
+    border-radius: 0 15px;
+    box-shadow: 2px 5px black;
+}
+p, .date{
+    padding: 10px;
 }
