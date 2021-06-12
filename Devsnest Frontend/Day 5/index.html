@@ -13,21 +13,21 @@
         <div class="calculator">
             <div class="display">
                 <div class="inner_display">
-                    <input type="number" class="inner-text" value=0>
+                    <input type="text" class="inner-text" value=0>
                 </div>
             </div>
             
             <div class="btn">
-                <div class="inner-btn yellow" id="clear">AC</div>
+                <div class="inner-btn yellow op-key" data-action="clear">AC</div>
             </div>
             <div class="btn">
-                <div class="inner-btn yellow" id="divide">/</div>
+                <div class="inner-btn yellow op-key" data-action="divide">/</div>
             </div>
             <div class="btn">
-                <div class="inner-btn yellow" id="multiply">*</div>
+                <div class="inner-btn yellow op-key" data-action="multiply">*</div>
             </div>
             <div class="btn">
-                <div class="inner-btn yellow" id="backspace">
+                <div class="inner-btn yellow" data-action="backspace">
                     <i class="fas fa-backspace"></i>
                 </div>
             </div>
@@ -41,7 +41,7 @@
                 <div class="inner-btn num-key">9</div>
             </div>
             <div class="btn">
-                <div class="inner-btn yellow" id="sub">-</div>
+                <div class="inner-btn yellow op-key" data-action="subtract">-</div>
             </div>
             <div class="btn">
                 <div class="inner-btn num-key">4</div>
@@ -53,7 +53,7 @@
                 <div class="inner-btn num-key">6</div>
             </div>
             <div class="btn">
-                <div class="inner-btn yellow" id="add">+</div>
+                <div class="inner-btn yellow op-key" data-action="add">+</div>
             </div>
             <div class="btn">
                 <div class="inner-btn num-key">1</div>
@@ -64,25 +64,20 @@
             <div class="btn">
                 <div class="inner-btn num-key">3</div>
             </div>
-            <div class="btn">
-                <div class="inner-btn yellow" id="percent">%</div>
+            <div class="btn" id="equal">
+                <div class="yellow op-key" data-action="calculate">=</div>
             </div>
             <div class="btn">
                 <div class="inner-btn num-key">00</div>
             </div>
             <div class="btn">
+                <div class="inner-btn op-key" data-action="decimal">.</div>
+            </div>
+            <div class="btn">
                 <div class="inner-btn num-key">0</div>
             </div>
-            <div class="btn">
-                <div class="inner-btn num-key">.</div>
-            </div>
             
             
-            <div class="btn">
-                <div class="inner-btn yellow" id="equal">
-                    <i class="fas fa-equals"></i>
-                </div>
-            </div>
         </div>
     </div>
     <script src="./script.js"></script>

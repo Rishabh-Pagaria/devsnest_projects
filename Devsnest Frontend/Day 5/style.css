@@ -34,11 +34,20 @@ box-shadow:  9px 9px 18px #0f1212,
 .display{
     grid-column: 1/5;
 }
+#equal{
+    grid-column: 4/5;
+    grid-row: 5/7;
+    font-size:1.8rem;
+    margin: 15px 15px 0 15px;
+    border-radius: 25px;
+    box-shadow:  6px 6px 12px #0f1212,
+             -6px -6px 12px #3b4646;
+}
 .inner_display{
     display:flex;
     justify-content:center;
 }
-input[type=number]{
+input[type=text]{
     padding:12px;
     font-size:2.5rem;
     color:white;
@@ -51,21 +60,21 @@ background: #252c2c;
 box-shadow: inset 5px 5px 17px #0f1212,
             inset -5px -5px 17px #3b4646;
 }
-input[type=number]:focus{
+input[type=text]:focus{
     outline:none;
     
 }
-input::-webkit-outer-spin-button,
-  input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-  }
-  input[type=number] {
-    -moz-appearance:textfield;
-  }
 .btn{
     display:flex;
     justify-content:center;
     align-items:center;
+}
+.op-key{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:100%;
 }
 .inner-btn{
     font-weight: bolder;
@@ -81,10 +90,10 @@ background: #252c2c;
 box-shadow:  6px 6px 12px #0f1212,
              -6px -6px 12px #3b4646;
 }
-.inner-btn:hover{
+.inner-btn:hover,#equal:hover{
     cursor:pointer;
 }
-.inner-btn:active{
+.inner-btn:active,#equal:active{
     font-size: 1.7rem;
     box-shadow:  inset 6px 6px 12px #0f1212,
             inset -6px -6px 12px #3b4646;
