@@ -46,7 +46,7 @@ html{
 .hand{
     width:50%;
     height: 4px;
-    background-color:rgb(199, 198, 198);
+    background-color:rgb(128, 118, 118);
     position: absolute;
     top:50%;
     transform-origin: 100%;
