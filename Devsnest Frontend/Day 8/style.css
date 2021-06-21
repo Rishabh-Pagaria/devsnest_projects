@@ -22,15 +22,23 @@ h1{
   flex-wrap: wrap;
 	
 }
-.small-box {
+.red-box {
   width: 20px;
   height: 20px;
   background-color: #de4639;
   cursor: pointer;
   outline: 1px solid #e24f3e;
 }
-
-
-.click-again {
-  background: white;
+.red-box:hover, .add-class{
+  background-color:#f85344;
+}
+.white-box {
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  cursor: pointer;
+  outline: 1px solid #e24f3e;
+}
+.add-class{
+  background:#de4639;
 }
