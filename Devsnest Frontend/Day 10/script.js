@@ -9,19 +9,17 @@ let secondCard;
 window.onload = ()=>{
     setTimeout(()=>{
         shuffleCards();
-    },1000)
+    },100)
     
 };
 function shuffleCards(){
-    cards.forEach(card => function(){
+    cards.forEach(card =>{
         let randomNumber = Math.floor(Math.random() * 12);
         card.style.order = randomNumber;
     })
 }
 function flipCard () {
     this.classList.add("flip");
-    
-    
     if(!isFliped){
         isFliped = true;
         firstCard = this;
@@ -51,7 +49,7 @@ function aMatch(){
         console.log(allCards);
         reset();
         wonGame();
-    },100)
+    },1000)
 }
 function wonGame(){
     if(allCards.length == 0){
@@ -59,7 +57,6 @@ function wonGame(){
         // console.log("It's Over");
     }
 }
-
 // checking if the pair does not match
 function noMatch(){
     setTimeout(()=>{
@@ -67,13 +64,10 @@ function noMatch(){
         secondCard.classList.remove("flip");
         reset();
     },500)
-    
 }
 function reset(){
     isFliped = false;
     firstCard = 0;
     secondCard = 0;
 }
-
-
 cards.forEach(card => card.addEventListener('click',flipCard));
