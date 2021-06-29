@@ -68,6 +68,7 @@ function shuffle(arr){
         arr[i] = temp;
     }
 }
+shuffle(quiz);
 quiz.forEach((current, number)=>{
     const container = document.createElement('div');
     container.className = "container";
@@ -99,9 +100,6 @@ quiz.forEach((current, number)=>{
     console.log(counter);
    
 })
-
-
-
 
 
 {/* <div class="container">
