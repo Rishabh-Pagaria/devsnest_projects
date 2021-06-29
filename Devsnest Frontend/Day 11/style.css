@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color:#000000
+}
+body{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom left, #1b2e46 24%, #d16500 100%);
+}
+.header,.score{
+    height: 10vh;
+    display:flex;
+    justify-content:center;
+    font-size: 1.5rem;
+    font-weight:bolder;
+}
+.container{
+    width: 800px;
+    height:40vh;
+    background: rgba(8, 8, 8, 0.1);
+box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+backdrop-filter: blur( 5.0px );
+-webkit-backdrop-filter: blur( 5.0px );
+border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 20px 0;
+}
+.questions{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 1.6rem;
+    height: 10vh;
+    margin: 10px;
+    
+}
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 50px 0 0 0;
+    height: 100%;
+}
+.options > button{
+    width: 45%;
+    border: none;
+    margin: 5px;
+    padding: 15px 0;
+    font-size: 1.2rem;
+    font-weight:bolder;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 7.0px );
+    -webkit-backdrop-filter: blur( 7.0px );
+    border-radius: 10px;
+    transition: color 0.5s ease-in;
+}
+.options > button:hover{
+    background: rgba( 2, 2, 2, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 5.5px );
+-webkit-backdrop-filter: blur( 5.5px );
+border-radius: 10px;
+
+}
+.right{
+    color: rgba(21, 255, 0, 0.719);
+}
+.wrong{
+    color:red;
+}
