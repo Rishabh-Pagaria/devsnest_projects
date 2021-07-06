@@ -60,6 +60,7 @@ function del(){
         remove.addEventListener('click',function (){
             const closestElement =  this.closest(".todo-list-child");
             closestElement.style.display = "none";
+            // console.log(closestElement.childNodes[0]);
         })
     })
 }

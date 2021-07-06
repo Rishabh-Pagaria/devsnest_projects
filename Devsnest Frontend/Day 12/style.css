@@ -1,9 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap');
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
     font-family: 'Montserrat', sans-serif;
+}
+.tilt{
+    margin-top: 50px;
+    position: relative;
+}
+.tilt div:nth-child(1){
+    position: absolute;
+    border: 2px solid black;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px 0;
+    transform: rotate(-1.1deg);
+}
+.tilt div:nth-child(2){
+    position: absolute;
+    border: 2px solid black;
+    height: 100%;
+    width: 100%;
+    border-radius: 0 50px;
+    transform: rotate(1.1deg);
+}
+h1{
+    font-family: 'Zen Loop', cursive;
+    font-size: 3.8rem;
+    text-align: center;
 }
 .todo{
     display:flex;
@@ -12,6 +38,7 @@
     height:100%;
     max-width: 550px;
     margin: auto;
+    
 }
 .todo-add{
     display:flex;
