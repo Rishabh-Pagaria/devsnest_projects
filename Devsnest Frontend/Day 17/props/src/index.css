@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+.App {
+    font-family: sans-serif;
+    width: 100%;
+    height: 50vh;
+    overflow-x: auto;
+    padding: 10px;
+    box-shadow: 4px 5px 10px 1px black;
+}
+.card {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+    background-color: aquamarine;
+    border-radius: 5px;
+    padding:20px;
+}
+  
